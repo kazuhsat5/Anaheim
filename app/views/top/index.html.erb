@@ -12,17 +12,19 @@
             <th id="writer">記入者</th>
             <th id="worker">作業担当</th>
         </tr>
+        <% cnt = 1 %>
         <% @supported.each do |task| %>
         <tr>
-            <td id="check"><span class="edit"><a href="/task/edit/<%= task.id %>">Edit</a></span></td>
-            <td id="no"><%= task.id %></td>
+            <td id="check"><span class="edit"><a href="/tasks/edit/<%= task.id %>">Edit</a></span></td>
+            <td id="no"><%= cnt %></td>
             <td class="<%= task.priority %>"><%= task.priority %></td>
             <td><%= task.item %></td>
             <td><%= task.position %></td>
-            <td><%= task.findDate %></td>
-            <td><%= task.finder %></td>
-            <td><%= task.responder %></td>
+            <td class="date"><%= task.findDate %></td>
+            <td class="finder"><%= task.finder %></td>
+            <td class="responder"><%= task.responder %></td>
         </tr>
+        <% cnt += 1 %>
         <% end %>
     </table>
 </div><!-- #table -->
@@ -41,17 +43,19 @@
             <th id="writer">記入者</th>
             <th id="worker">作業担当</th>
         </tr>
+        <% cnt = 1 %>
         <% @unsupported.each do |task| %>
         <tr>
-            <td id="check"><span class="edit"><a href="/task/edit/<%= task.id %>">Edit</a><span></td>
-            <td id="no"><%= task.id %></td>
+            <td id="check"><span class="edit"><a href="/tasks/edit/<%= task.id %>">Edit</a><span></td>
+            <td id="no"><%= cnt %></td>
             <td class="<%= task.priority %>"><%= task.priority %></td>
             <td><%= task.item %></td>
             <td><%= task.position %></td>
-            <td><%= task.findDate %></td>
-            <td><%= task.finder %></td>
-            <td><%= task.responder %></td>
+            <td class="date"><%= task.findDate %></td>
+            <td class="finder"><%= task.finder %></td>
+            <td class="responder"><%= task.responder %></td>
         </tr>
+        <% cnt += 1 %>
         <% end %>
     </table>
 </div><!-- #table -->

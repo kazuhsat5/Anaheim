@@ -40,10 +40,10 @@ th#content {
     width: 40%;
 }
 th#position {
-    width: 10%
+    width: 15%
 }
 th#date {
-    width: 15%;
+    width: 10%;
 }
 th#writer {
     width: 10%;
@@ -88,6 +88,15 @@ td.P3 {
     width: 5%;
     text-align: center;
     background-color: #ecd727;
+}
+td.date {
+    text-align: center;
+}
+td.finder {
+    text-align: center;
+}
+td.responder {
+    text-align: center;
 }
 div#action {
     width: 100%;
