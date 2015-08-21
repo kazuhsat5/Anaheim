@@ -8,6 +8,7 @@ class TasksController < ApplicationController
     end
 
     def edit
+        @id = params[:id]
     end
 
     def create
