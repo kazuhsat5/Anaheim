@@ -2,37 +2,38 @@
     <%= form_for(@task) do |f| %>
     <table>
         <tr>
-            <td>優先度</td>
-            <td><%= f.select :priority, ['P0', 'P1', 'P2', 'P3'], { include_blank: '選択してください' } %></td>
+            <td class="label">優先度</td>
+            <td class="input"><%= f.select :priority, ['P0', 'P1', 'P2', 'P3'], { include_blank: '選択してください' } %></td>
         </tr>
         <tr>
-            <td>内容</td>
-            <td><%= f.text_field :item %></td>
+            <td class="label">内容</td>
+            <td class="input"><%= f.text_field :item, size: 70 %></td>
         </tr>
         <tr>
-            <td>場所</td>
-            <td><%= f.text_field :position %></td>
+            <td class="label">場所</td>
+            <td class="input"><%= f.text_field :position %></td>
         </tr>
         <tr>
-            <td>記入日</td>
-            <td><%= f.date_field :findDate %></td>
+            <td class="label">記入日</td>
+            <td class="input"><%= f.date_field :findDate %></td>
         </tr>
         <tr>
-            <td>記入者</td>
-            <td><%= f.text_field :finder %></td>
+            <td class="label">記入者</td>
+            <td class="input"><%= f.text_field :finder %></td>
         </tr>
         <tr>
-            <td>作業担当</td>
-            <td><%= f.text_field :responder %></td>
+            <td class="label">作業担当</td>
+            <td class="input"><%= f.text_field :responder %></td>
         </tr>
         <tr>
-            <td>対応状況</td>
-            <td>
+            <td class="label">対応状況</td>
+            <td class="input">
                 <%= f.radio_button :isCorrespond, 0, :checked => 'checked' %>未対応
                 <%= f.radio_button :isCorrespond, 1 %>対応済み
              </td>
         </tr>
     </table>
+    <br />
     <div id="action">
         <%= f.submit %>
     </div><!-- #action -->

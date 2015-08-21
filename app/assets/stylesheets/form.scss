@@ -1,0 +1,27 @@
+div#form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #c0c0c0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+div#form table {
+    width: 55%;
+    margin: 0 auto;
+}
+td.label {
+    width: 15%;
+    height: 30px;
+    border: none;
+}
+td.input {
+    width: 30%;
+    height: 30px;
+    border: none;
+}
+div#action {
+    width: 20%;
+    text-align: center;
+}
