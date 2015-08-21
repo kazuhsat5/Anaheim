@@ -1,0 +1,40 @@
+<div id="form">
+    <%= form_for(@task) do |f| %>
+    <table>
+        <tr>
+            <td>優先度</td>
+            <td><%= f.select :priority, ['P0', 'P1', 'P2', 'P3'], { include_blank: '選択してください' } %></td>
+        </tr>
+        <tr>
+            <td>内容</td>
+            <td><%= f.text_field :item %></td>
+        </tr>
+        <tr>
+            <td>場所</td>
+            <td><%= f.text_field :position %></td>
+        </tr>
+        <tr>
+            <td>記入日</td>
+            <td><%= f.date_field :findDate %></td>
+        </tr>
+        <tr>
+            <td>記入者</td>
+            <td><%= f.text_field :finder %></td>
+        </tr>
+        <tr>
+            <td>作業担当</td>
+            <td><%= f.text_field :responder %></td>
+        </tr>
+        <tr>
+            <td>対応状況</td>
+            <td>
+                <%= f.radio_button :isCorrespond, 0, :checked => 'checked' %>未対応
+                <%= f.radio_button :isCorrespond, 1 %>対応済み
+             </td>
+        </tr>
+    </table>
+    <div id="action">
+        <%= f.submit %>
+    </div><!-- #action -->
+    <% end %>
+</div><!-- #form -->
