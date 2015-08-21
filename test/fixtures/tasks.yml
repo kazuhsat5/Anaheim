@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  priority: MyString
+  item: MyString
+  position: MyString
+  finder: MyString
+  findDate: 2015-08-18
+  responder: MyString
+  responseDate: 2015-08-18
+  isCorrespond: false
+
+two:
+  priority: MyString
+  item: MyString
+  position: MyString
+  finder: MyString
+  findDate: 2015-08-18
+  responder: MyString
+  responseDate: 2015-08-18
+  isCorrespond: false

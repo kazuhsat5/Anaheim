@@ -1,0 +1,58 @@
+<h1>UNSUPPORTED</h1>
+<% if ! @supported.empty? then %>
+<div id="table">
+    <table>
+        <tr>
+            <th id="check"></th>
+            <th id="no">No.</th>
+            <th id="priority">優先度</th>
+            <th id="content">内容</th>
+            <th id="position">場所</th>
+            <th id="date">記入日</th>
+            <th id="writer">記入者</th>
+            <th id="worker">作業担当</th>
+        </tr>
+        <% @supported.each do |task| %>
+        <tr>
+            <td id="check"><span class="edit"><a href="/task/edit/<%= task.id %>">Edit</a></span></td>
+            <td id="no"><%= task.id %></td>
+            <td class="<%= task.priority %>"><%= task.priority %></td>
+            <td><%= task.item %></td>
+            <td><%= task.position %></td>
+            <td><%= task.findDate %></td>
+            <td><%= task.finder %></td>
+            <td><%= task.responder %></td>
+        </tr>
+        <% end %>
+    </table>
+</div><!-- #table -->
+<% end %>
+<h1>SUPPORTED</h1>
+<% if ! @unsupported.empty? then %>
+<div id="table">
+    <table>
+        <tr>
+            <th id="check"></th>
+            <th id="no">No.</th>
+            <th id="priority">優先度</th>
+            <th id="content">内容</th>
+            <th id="position">場所</th>
+            <th id="date">記入日</th>
+            <th id="writer">記入者</th>
+            <th id="worker">作業担当</th>
+        </tr>
+        <% @unsupported.each do |task| %>
+        <tr>
+            <td id="check"><span class="edit"><a href="/task/edit/<%= task.id %>">Edit</a><span></td>
+            <td id="no"><%= task.id %></td>
+            <td class="<%= task.priority %>"><%= task.priority %></td>
+            <td><%= task.item %></td>
+            <td><%= task.position %></td>
+            <td><%= task.findDate %></td>
+            <td><%= task.finder %></td>
+            <td><%= task.responder %></td>
+        </tr>
+        <% end %>
+    </table>
+</div><!-- #table -->
+<% end %>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anaheim</title>
+<%= stylesheet_link_tag "application", :media => "all" %>
+</head>
+<body>
+<div id="headerFixed">
+<header>
+<div id="line"></div>
+<div id="headerContent">
+<a href="/"><img id="logo" src="/assets/logo.png"></a>
+<div id="menu">
+    <span><a href="/">Top</a></span>
+    <span><a href="/tasks/new">Task+</a></span>
+    <span><a href="">Download</a></span>
+</div><!-- #menu -->
+</div><!-- #headerContent -->
+<div id="reset"></div>
+</header>
+</div><!-- #headerFiexd -->
+<div id="main">
+<%= yield %>
+</div><!-- main -->
+<div id="footerFixed">
+<footer>
+    <div id="description">
+        <p>
+        <B>- Anaheim -</B><br />
+        課題管理表、課題管理ツール<br />
+        </p>
+    </div>
+    <div id="copyright">
+        <span>Copyright (C) kazuhsat5. All Rights Reserved.<span>
+    </div>
+</footer>
+</div><!-- #footerFixed -->
+</body>
+</html>
