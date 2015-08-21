@@ -58,7 +58,7 @@ footer {
 }
 div#description {
     text-align: left;
-    padding: 10px;
+    padding: 5px;
     font-size: 0.9em;
 }
 div#description p{
@@ -68,7 +68,7 @@ div#description p{
 }
 div#copyright {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 div#copyright span {
     color: #e6e6e6;
