@@ -2,7 +2,7 @@ div#form {
     width: 70%;
     margin: 0 auto;
     padding: 30px;
-    background-color: #c0c0c0;
+    background-color: #d6d6d6;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -23,4 +23,20 @@ td.input {
 div#action {
     width: 20%;
     text-align: center;
+}
+span#delete {
+    padding: 7px 20px;
+    font-size: 0.7em;
+    background-color: #dd8683;
+    color: #ffffff;
+    border-style: none;
+    cursor: pointer;
+}
+input#submit {
+    padding: 7px 20px;
+    font-size: 0.7em;
+    background-color: #9a9a9a;
+    color: #ffffff;
+    border-style: none;
+    cursor: pointer;
 }
