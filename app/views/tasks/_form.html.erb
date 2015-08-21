@@ -35,7 +35,10 @@
     </table>
     <br />
     <div id="action">
-        <%= f.submit "登録", :id => "submit" %>
+    <%= f.submit "登録", :id => "submit" %>
+    <% if @task.persisted? %>
+    <% # 空の場合 %>
+    <% end %>
     </div><!-- #action -->
     <% end %>
 </div><!-- #form -->
